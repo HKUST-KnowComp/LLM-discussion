@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "If Raymond does half as much laundry as Sarah, and Sarah does 4 times as much laundry as David, calculate the difference in the amount of laundry Raymond and David do if Sarah does 400 pounds of laundry.\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Let's start by finding out how much laundry David does. We know that Sarah does 4 times as much laundry as David, so if Sarah does 400 pounds of laundry, David does 400 / 4 = 100 pounds of laundry. Now, we can find out how much laundry Raymond does. We are told that Raymond does half as much laundry as Sarah, so Raymond does 400 / 2 = 200 pounds of laundry. Finally, we can calculate the difference in the amount of laundry Raymond and David do by subtracting David's laundry from Raymond's laundry: 200 - 100 = 100.\", \"answer\": \"100\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nOne agent thinks the answer is 100.\n\nYour group's opinions:\nOne agent thinks the answer is unknown. Below is his response:\n{\n  \"reasons\": \"Let's start by finding out how much laundry David does. We know that Sarah does 4 times as much laundry as David, so if Sarah does 400 pounds of laundry, David does 400 / 4 = 100 pounds of laundry. Now, we can find out how much laundry Raymond does. We are told that Raymond does half as much laundry as Sarah, so Raymond does 400 / 2 = 200 pounds of laundry. Finally, we can calculate the difference in the amount of laundry Raymond and David do by subtracting David's laundry from Raymond's laundry: 200 - 100 = 100.\",\n  \"answer\": \"100\"\n}\n\nOne agent thinks the answer is 200 - D. Below is his response:\n{\"reasons\": \"Let's start by assigning variables to the unknowns. Let's say the amount of laundry David does is D, the amount Sarah does is S, and the amount Raymond does is R. We are given that Sarah does 400 pounds of laundry, so S = 400. We are also given that Sarah does 4 times as much laundry as David, so S = 4D. Finally, we are given that Raymond does half as much laundry as Sarah, so R = 0.5S. We need to find the difference in the amount of laundry Raymond and David do, which is R - D. Substituting the values, we have R - D = (0.5S) - D = (0.5*400) - D = 200 - D.\", \"answer\": \"200 - D\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

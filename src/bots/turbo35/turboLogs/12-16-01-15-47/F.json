@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Tom's ship can travel at 10 miles per hour.  He is sailing from 1 to 4 PM.  He then travels back at a rate of 6 mph.  How long does it take him to get back?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Tom's ship travels at a speed of 10 miles per hour. He sails from 1 to 4 PM, which is a total of 3 hours. On the return trip, he travels at a speed of 6 mph. To find the time it takes him to get back, we need to divide the distance by the speed. The distance traveled is the same for both trips. So, the time it takes him to get back is equal to the distance divided by the speed on the return trip. The distance traveled is 30 miles and the speed on the return trip is 6 mph. Therefore, the time it takes him to get back is 30 miles / 6 mph = 5 hours.\", \"answer\": \"5\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 5.\n\nYour group's opinions:\nTwo agents think the answer is 5. Below are their responses:\n{\"reasons\": \"Tom's ship travels at a speed of 10 miles per hour. He sails from 1 to 4 PM, which is a total of 3 hours. On the return trip, he travels at a speed of 6 mph. To find the time it takes him to get back, we need to divide the distance by the speed. The distance traveled is the same for both trips. So, the time it takes him to get back is equal to the distance divided by the speed on the return trip. The distance traveled is 30 miles and the speed on the return trip is 6 mph. Therefore, the time it takes him to get back is 30 miles / 6 mph = 5 hours.\", \"answer\": \"5\"}\n\n{\"reasons\": \"Tom's ship travels at a speed of 10 miles per hour. He sails from 1 to 4 PM, which is a total of 3 hours. To find the distance he traveled, we multiply the speed by the time: 10 mph * 3 hours = 30 miles. Tom then travels back at a rate of 6 mph. To find the time it takes him to get back, we divide the distance by the speed on the return trip: 30 miles / 6 mph = 5 hours.\", \"answer\": \"5\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

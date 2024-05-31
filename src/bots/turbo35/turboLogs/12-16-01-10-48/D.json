@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "According to its nutritional info, a bag of chips has 250 calories per serving. If a 300g bag has 5 servings, how many grams can you eat if your daily calorie target is 2000 and you have already consumed 1800 calories?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"To find out how many grams of chips you can eat, we need to calculate the remaining calories you can consume and then convert it to grams based on the calorie per serving ratio. \\n\\n1. Calculate the remaining calories: 2000 - 1800 = 200 calories. \\n2. Calculate the calories per serving: 250 calories per serving. \\n3. Calculate the maximum servings you can eat: 200 calories / 250 calories per serving = 0.8 servings. \\n4. Calculate the maximum grams you can eat: 0.8 servings * 300g per bag = 240 grams.\", \"answer\": \"240\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nTwo agents think the answer is 120.\nOne agent thinks the answer is 0.\n\nYour group's opinions:\nTwo agents think the answer is 240. Below are their responses:\n{\"reasons\": \"To find out how many grams of chips you can eat, we need to calculate the remaining calories you can consume and then convert it to grams based on the calorie per serving ratio. \\n\\n1. Calculate the remaining calories: 2000 - 1800 = 200 calories. \\n2. Calculate the calories per serving: 250 calories per serving. \\n3. Calculate the maximum servings you can eat: 200 calories / 250 calories per serving = 0.8 servings. \\n4. Calculate the maximum grams you can eat: 0.8 servings * 300g per bag = 240 grams.\", \"answer\": \"240\"}\n\n{\"reasons\": \"To find out how many grams you can eat, we need to calculate the remaining calories you can consume and then convert it to grams. \\n\\n1. Calculate the remaining calories: 2000 - 1800 = 200 calories. \\n2. Calculate the calories per serving: 250 calories / 5 servings = 50 calories per serving. \\n3. Calculate the grams per serving: 300g / 5 servings = 60g per serving. \\n4. Calculate the remaining servings you can eat: 200 calories / 50 calories per serving = 4 servings. \\n5. Calculate the maximum grams you can eat: 4 servings * 60g per serving = 240 grams.\", \"answer\": \"240\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

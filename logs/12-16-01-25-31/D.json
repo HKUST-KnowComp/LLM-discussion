@@ -1,0 +1,26 @@
+[
+    {
+        "role": "user",
+        "content": "Tommy is fundraising for his charity by selling brownies for $3 a slice and cheesecakes for $4 a slice. If Tommy sells 43 brownies and 23 slices of cheesecake, how much money does Tommy raise?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\"\n"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Tommy sells 43 brownies for $3 each, so the total amount raised from brownies is 43 * 3 = 129. Tommy sells 23 cheesecake slices for $4 each, so the total amount raised from cheesecakes is 23 * 4 = 92. Therefore, Tommy raises a total of 129 + 92 = 221 dollars.\", \"answer\": \"221\"}"
+    },
+    {
+        "role": "user",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 221.\n\nYour group's opinions:\nTwo agents think the answer is 221. Below are their responses:\n{\"reasons\": \"Tommy sells 43 brownies for $3 each, so the total amount from brownies is 43 * 3 = 129. Tommy sells 23 cheesecakes for $4 each, so the total amount from cheesecakes is 23 * 4 = 92. Therefore, Tommy raises a total of 129 + 92 = 221 dollars.\", \"answer\": \"221\"}\n\n{\"reasons\": \"Tommy sells 43 brownies for $3 each, so the total amount of money raised from brownies is 43 * 3 = 129. Tommy sells 23 slices of cheesecake for $4 each, so the total amount of money raised from cheesecakes is 23 * 4 = 92. Therefore, Tommy raises a total of 129 + 92 = 221 dollars.\", \"answer\": \"221\"}"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Tommy sells 43 brownies for $3 each, so the total amount raised from brownies is 43 * 3 = 129. Tommy sells 23 cheesecake slices for $4 each, so the total amount raised from cheesecakes is 23 * 4 = 92. Therefore, Tommy raises a total of 129 + 92 = 221 dollars.\", \"answer\": \"221\"}"
+    },
+    {
+        "role": "user",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 221.\n\nYour group's opinions:\nTwo agents think the answer is 221. Below are their responses:\n{\"reasons\": \"Tommy sells 43 brownies for $3 each, so the total amount raised from brownies is 43 * 3 = 129. Tommy sells 23 cheesecake slices for $4 each, so the total amount raised from cheesecakes is 23 * 4 = 92. Therefore, Tommy raises a total of 129 + 92 = 221 dollars.\", \"answer\": \"221\"}\n\n{\"reasons\": \"Tommy sells 43 brownies for $3 each, so the total amount raised from brownies is 43 * 3 = 129. Tommy sells 23 cheesecake slices for $4 each, so the total amount raised from cheesecakes is 23 * 4 = 92. Therefore, Tommy raises a total of 129 + 92 = 221 dollars.\", \"answer\": \"221\"}"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Tommy sells 43 brownies for $3 each, so the total amount raised from brownies is 43 * 3 = 129. Tommy sells 23 cheesecake slices for $4 each, so the total amount raised from cheesecakes is 23 * 4 = 92. Therefore, Tommy raises a total of 129 + 92 = 221 dollars.\", \"answer\": \"221\"}"
+    }
+]

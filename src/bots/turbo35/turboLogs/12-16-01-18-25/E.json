@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "A wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical boxes, each weighing 15 pounds, will pass over the bridge. The combined weight of the driver and the empty truck is 3755 pounds. What is the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"To find the maximum number of boxes that can be loaded onto the truck without exceeding the weight limit, we need to subtract the weight of the driver and the empty truck from the weight limit of the bridge, and then divide the result by the weight of each box. The weight limit of the bridge is 5000 pounds. The combined weight of the driver and the empty truck is 3755 pounds. Each box weighs 15 pounds. Subtracting the weight of the driver and the empty truck from the weight limit of the bridge gives us 5000 - 3755 = 1245 pounds. Dividing 1245 by the weight of each box, which is 15 pounds, gives us the maximum number of boxes that can be loaded onto the truck: 1245 / 15 = 83.\", \"answer\": \"83\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 163.\n\nYour group's opinions:\nTwo agents think the answer is 163. Below are their responses:\n{\"reasons\": \"To find the maximum number of boxes that can be loaded onto the truck without exceeding the weight limit, we need to subtract the weight of the driver and the empty truck from the weight limit of the bridge, and then divide the result by the weight of each box. The weight limit of the bridge is 5000 pounds. The combined weight of the driver and the empty truck is 3755 pounds. Each box weighs 15 pounds. Using this information, we can set up the equation: 5000 - 3755 = 15x. Solving this equation will give us the maximum number of boxes that can be loaded onto the truck.\", \"answer\": \"163\"}\n\n{\"reasons\": \"Let's denote the maximum number of boxes that can be loaded onto the truck as 'x'. The weight of the driver and the empty truck is 3755 pounds. The weight of each box is 15 pounds. The weight limit of the bridge is 5000 pounds. We can set up the equation: 3755 + 15x <= 5000. Now we can solve for 'x'.\", \"answer\": \"163\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

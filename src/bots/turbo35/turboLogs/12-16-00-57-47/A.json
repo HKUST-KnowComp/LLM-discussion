@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"To calculate Jill's annual salary, we need to find the total amount she earns as a teacher and as a coach and then multiply it by the number of weeks she works in a year. \nFirst, we calculate her salary as a teacher: 35 hours/week * $20/hour = $700/week. \nNext, we calculate her salary as a coach: 15 hours/week * $30/hour = $450/week. \nThen, we calculate her weekly salary by adding her salary as a teacher and as a coach: $700/week + $450/week = $1150/week. \nFinally, we calculate her annual salary by multiplying her weekly salary by the number of weeks in a year: $1150/week * 50 weeks/year = $57,500/year.\", \"answer\": \"57500\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nOne agent thinks the answer is 57500.\n\nYour group's opinions:\nTwo agents think the answer is unknown. Below are their responses:\n{\"reasons\": \"Jill works 50 weeks a year. She works 35 hours a week as a teacher and 15 hours a week as a coach. Her hourly rate as a teacher is $20 and as a coach is $30. To find her annual salary, we need to calculate the total amount she earns as a teacher and as a coach and then multiply it by 50 weeks. \nFirst, we calculate her salary as a teacher: 35 hours/week * $20/hour * 50 weeks/year = $35,000. \nNext, we calculate her salary as a coach: 15 hours/week * $30/hour * 50 weeks/year = $22,500. \nFinally, we add her salaries as a teacher and a coach to get her total annual salary: $35,000 + $22,500 = $57,500.\", \"answer\": \"57500\"}\n\n{\"reasons\": \"To calculate Jill's annual salary, we need to find the total amount she earns as a teacher and as a coach and then multiply it by the number of weeks she works in a year. \nFirst, we calculate her salary as a teacher: 35 hours/week * $20/hour = $700/week. \nNext, we calculate her salary as a coach: 15 hours/week * $30/hour = $450/week. \nThen, we calculate her weekly salary by adding her salary as a teacher and as a coach: $700/week + $450/week = $1150/week. \nFinally, we calculate her annual salary by multiplying her weekly salary by the number of weeks in a year: $1150/week * 50 weeks/year = $57,500/year.\", \"answer\": \"57500\"}\n(Hint: You must respond as required json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\")"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

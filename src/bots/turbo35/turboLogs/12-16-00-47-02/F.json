@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "After critically evaluating the provided answers and reasoning process, I confirm that the correct answer is indeed $18. Therefore, I will provide the same answer as before.\n\n{\"reasons\": \"Janet's ducks lay 16 eggs per day. She eats three eggs for breakfast every morning, so the number of eggs remaining is 16 - 3 = 13. She bakes muffins for her friends every day with four eggs, so the number of eggs remaining is 13 - 4 = 9. Janet sells the remainder at the farmers' market daily for $2 per fresh duck egg, so she makes 9 * $2 = $18 every day.\", \"answer\": \"18\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 18.\n\nYour group's opinions:\nTwo agents think the answer is 18. Below are their responses:\nAfter critically evaluating the provided answers and reasoning process, I confirm that the correct answer is indeed $18.\nReasoning process:\n1. Janet's ducks lay 16 eggs per day.\n2. She eats three eggs for breakfast every morning, so the number of eggs remaining is 16 - 3 = 13.\n3. She bakes muffins for her friends every day with four eggs, so the number of eggs remaining is 13 - 4 = 9.\n4. Janet sells the remainder at the farmers' market daily for $2 per fresh duck egg, so she makes 9 * $2 = $18 every day at the farmers' market.\nAnswer:\n{\"reasons\": \"Janet sells 9 eggs at the farmers' market for $2 per egg.\", \"answer\": \"18\"}\n\nAfter critically evaluating the provided answers, I have determined that the correct answer is indeed $18. Here is the updated reasoning process:\nPremises:\n- Janet\u2019s ducks lay 16 eggs per day.\n- She eats three eggs for breakfast every morning.\n- She bakes muffins for her friends every day with four eggs.\n- She sells the remainder at the farmers' market daily for $2 per fresh duck egg.\nReasoning process:\n1. Janet's ducks lay 16 eggs per day.\n2. She eats three eggs for breakfast every morning, so the number of eggs remaining is 16 - 3 = 13.\n3. She bakes muffins for her friends every day with four eggs, so the number of eggs remaining is 13 - 4 = 9.\n4. Janet sells the remainder at the farmers' market daily for $2 per fresh duck egg, so she makes 9 * $2 = $18 every day.\nAnswer:\n{\"reasons\": \"Janet's ducks lay 16 eggs per day. She eats three eggs for breakfast every morning, so the number of eggs remaining is 16 - 3 = 13. She bakes muffins for her friends every day with four eggs, so the number of eggs remaining is 13 - 4 = 9. Janet sells the remainder at the farmers' market daily for $2 per fresh duck egg, so she makes 9 * $2 = $18 every day.\", \"answer\": \"18\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

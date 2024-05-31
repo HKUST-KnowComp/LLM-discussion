@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Two girls each got 1/6 of the 24 liters of water. Then a boy got 6 liters of water. How many liters of water were left?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Each girl got 1/6 of 24 liters, so together they got 2/6 or 1/3 of 24 liters. This is equal to 8 liters. Then a boy got 6 liters. Therefore, the total amount of water taken is 8 + 6 = 14 liters. To find the amount of water left, we subtract the total amount taken from the initial amount of water, which is 24 liters. Therefore, the amount of water left is 24 - 14 = 10 liters.\", \"answer\": \"10\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 10.\n\nYour group's opinions:\nTwo agents think the answer is 10. Below are their responses:\n{\"reasons\": \"Each girl got 1/6 of 24 liters, so together they got 2/6 or 1/3 of 24 liters. This is equal to 8 liters. Then a boy got 6 liters. Therefore, the total amount of water taken is 8 + 6 = 14 liters. To find the amount of water left, we subtract the total amount taken from the initial amount of water, which is 24 liters. Therefore, the amount of water left is 24 - 14 = 10 liters.\", \"answer\": \"10\"}\n\n{\"reasons\": \"Each girl got 1/6 of 24 liters, so together they got 2/6 or 1/3 of 24 liters. This is equal to 8 liters. Then a boy got 6 liters. Therefore, the total amount of water taken is 8 + 6 = 14 liters. To find the amount of water left, we subtract the total amount taken from the initial amount of water, which is 24 liters. Therefore, the amount of water left is 24 - 14 = 10 liters.\", \"answer\": \"10\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

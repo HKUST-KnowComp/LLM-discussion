@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "A basket contains 25 oranges among which 1 is bad, 20% are unripe, 2 are sour and the rest are good. How many oranges are good?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Let's evaluate the provided answers and compare them with our initial reasoning:\\n\\n1. Other group members' opinions:\\n   - Three agents think the answer is 17. This answer seems to be based on subtracting the number of bad, unripe, and sour oranges from the total, which is incorrect as it does not consider the 20% of unripe oranges.\\n\\n2. Your group's opinions:\\n   - Two agents think the answer is 17. This answer is based on subtracting the number of bad, unripe, and sour oranges from the total, but it also does not consider the 20% of unripe oranges.\\n\\nConsidering our initial reasoning and the incorrect answers provided, we can conclude that the correct answer is 17, as it correctly subtracts the number of bad, unripe, and sour oranges from the total number of oranges.\", \"answer\": \"17\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 17.\n\nYour group's opinions:\nTwo agents think the answer is 17. Below are their responses:\n{\"reasons\": \"Let's break down the information given in the problem step by step:\\n\\n1. Total number of oranges = 25\\n2. Number of bad oranges = 1\\n3. Percentage of unripe oranges = 20%\\n4. Number of sour oranges = 2\\n\\nTo find the number of good oranges, we need to subtract the number of bad, unripe, and sour oranges from the total number of oranges.\\n\\nNumber of bad oranges = 1\\nNumber of unripe oranges = 20% of 25 = 0.2 * 25 = 5\\nNumber of sour oranges = 2\\nNumber of good oranges = Total oranges - (Number of bad oranges + Number of unripe oranges + Number of sour oranges) = 25 - (1 + 5 + 2) = 17\", \"answer\": \"17\"}\n\n{\"reasons\": \"Let's break down the information given in the problem step by step:\\n\\n1. Total number of oranges = 25\\n2. Number of bad oranges = 1\\n3. Percentage of unripe oranges = 20%\\n4. Number of sour oranges = 2\\n\\nTo find the number of good oranges, we need to subtract the number of bad, unripe, and sour oranges from the total number of oranges.\\n\\nNumber of bad oranges = 1\\nNumber of unripe oranges = 20% of 25 = 0.2 * 25 = 5\\nNumber of sour oranges = 2\\n\\nNumber of good oranges = Total oranges - (Number of bad oranges + Number of unripe oranges + Number of sour oranges) = 25 - (1 + 5 + 2) = 17\", \"answer\": \"17\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

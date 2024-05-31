@@ -1,0 +1,26 @@
+[
+    {
+        "role": "user",
+        "content": "A company pays each of its employees $600 in a month. The company has a policy of increasing the salaries of each of its employees by 10% of the initial salary every year for those who've stayed in the company for five years. If Sylvie just clocked 5 years in the company last December, what's her annual salary after three more years of service?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\"\n"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Sylvie's initial salary is $600. After 5 years of service, her salary will be increased by 10% each year. After 3 more years, her salary will be increased by 10% for 3 times.\", \"answer\": \"726\"}"
+    },
+    {
+        "role": "user",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nOne agent thinks the answer is Sylvie's annual salary after three more years of service will be $726..\nTwo agents think the answer is 726.\n\nYour group's opinions:\nOne agent thinks the answer is 1170. Below is his response:\n{\"reasons\": \"Sylvie's initial salary is $600. Her salary increases by 10% of her initial salary every year. After 5 years, her salary will be $600 + ($600 * 10% * 5) = $600 + ($600 * 0.1 * 5) = $600 + $300 = $900. After 3 more years of service, her salary will be $900 + ($900 * 10% * 3) = $900 + ($900 * 0.1 * 3) = $900 + $270 = $1170.\", \"answer\": \"1170\"}\n\nOne agent thinks the answer is 726. Below is his response:\n{\"reasons\": \"Sylvie's initial salary is $600. After 5 years of service, her salary increases by 10% each year. After 3 more years, her salary will increase by 10% for each of those 3 years.\", \"answer\": \"726\"}"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Sylvie's initial salary is $600. After 5 years of service, her salary increases by 10% each year. After 3 more years, her salary will increase by 10% for each of those 3 years. Therefore, her annual salary after three more years of service will be $600 + ($600 * 0.1 * 3) = $600 + $180 = $780.\", \"answer\": \"780\"}"
+    },
+    {
+        "role": "user",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 726.\n\nYour group's opinions:\nTwo agents think the answer is 780. Below are their responses:\n{\"reasons\": \"Sylvie's initial salary is $600. After 5 years of service, her salary increases by 10% each year. After 3 more years, her salary will increase by 10% for each of those 3 years. Therefore, her salary after 3 more years of service will be $600 + ($600 * 0.1 * 3) = $600 + $180 = $780.\", \"answer\": \"780\"}\n\n{\"reasons\": \"Sylvie's initial salary is $600. After 5 years of service, her salary increases by 10% each year. After 3 more years, her salary will increase by 10% for each of those 3 years. Therefore, her salary after 3 more years of service will be $600 + ($600 * 0.1 * 3) = $600 + $180 = $780.\", \"answer\": \"780\"}"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Sylvie's initial salary is $600. After 5 years of service, her salary increases by 10% each year. After 3 more years, her salary will increase by 10% for each of those 3 years. Therefore, her salary after 3 more years of service will be $600 + ($600 * 0.1 * 3) = $600 + $180 = $780.\", \"answer\": \"780\"}"
+    }
+]

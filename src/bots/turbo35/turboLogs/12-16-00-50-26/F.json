@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have together if Seattle has 20 sheep?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Let's analyze the problem step by step. First, we are given that Seattle has 20 sheep. Next, we are told that Charleston has 4 times as many sheep as Seattle. So, Charleston has 4 * 20 = 80 sheep. Finally, we are informed that Toulouse has twice as many sheep as Charleston. Therefore, Toulouse has 2 * 80 = 160 sheep. To find the total number of sheep in Toulouse, Charleston, and Seattle together, we add the number of sheep in each city: 20 + 80 + 160 = 260.\", \"answer\": \"260\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nOne agent thinks the answer is 260.\n\nYour group's opinions:\nTwo agents think the answer is 260. Below are their responses:\n{\"reasons\": \"Let's solve this problem step by step. \\n\\nFirst, let's assign variables to represent the number of sheep in each city. Let T represent the number of sheep in Toulouse, C represent the number of sheep in Charleston, and S represent the number of sheep in Seattle. \\n\\nFrom the problem, we know that S = 20. \\n\\nNext, we can use the given information to express the number of sheep in each city in terms of the other cities. We are told that Toulouse has twice as many sheep as Charleston, so T = 2C. We are also told that Charleston has 4 times as many sheep as Seattle, so C = 4S. \\n\\nNow, let's substitute the value of C in terms of S into the equation T = 2C. We have T = 2(4S). Simplifying this, we get T = 8S. \\n\\nFinally, we can substitute the given value of S into the equation T = 8S to find the value of T. \\n\\nTherefore, the number of sheep in Toulouse, Charleston, and Seattle together is T + C + S = 8S + 4S + S = 13S.\", \"answer\": \"260\"}\n\n{\"reasons\": \"Let's analyze the problem step by step. \\n\\nFirst, we are given that Seattle has 20 sheep. \\n\\nNext, we are told that Charleston has 4 times as many sheep as Seattle. So, Charleston has 4 * 20 = 80 sheep. \\n\\nFinally, we are informed that Toulouse has twice as many sheep as Charleston. Therefore, Toulouse has 2 * 80 = 160 sheep. \\n\\nTo find the total number of sheep in Toulouse, Charleston, and Seattle together, we add the number of sheep in each city: 20 + 80 + 160 = 260.\", \"answer\": \"260\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

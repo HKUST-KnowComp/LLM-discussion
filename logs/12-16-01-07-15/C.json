@@ -1,0 +1,26 @@
+[
+    {
+        "role": "user",
+        "content": "Terry eats 2 yogurts a day.  They are currently on sale at 4 yogurts for $5.00.  How much does he spend on yogurt over 30 days?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\"\n"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Terry eats 2 yogurts a day. They are currently on sale at 4 yogurts for $5.00. So, each yogurt costs $5.00 / 4 = $1.25. Terry eats 2 yogurts a day, so he spends 2 * $1.25 = $2.50 on yogurt per day. Over 30 days, he spends 30 * $2.50 = $75.00 on yogurt.\", \"answer\": \"75.00\"}"
+    },
+    {
+        "role": "user",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nOne agent thinks the answer is 75.\n\nYour group's opinions:\nOne agent thinks the answer is 75.00. Below is his response:\n{\"reasons\": \"Terry eats 2 yogurts a day. The yogurts are on sale at 4 for $5.00. So, each yogurt costs $5.00 / 4 = $1.25. Terry eats 2 yogurts a day, so he spends 2 * $1.25 = $2.50 on yogurt each day. Terry eats yogurt for 30 days, so he spends 30 * $2.50 = $75.00 on yogurt over 30 days.\", \"answer\": \"75.00\"}\n\nOne agent thinks the answer is 75. Below is his response:\n{\"reasons\": \"Terry eats 2 yogurts a day. Each yogurt costs $5.00 / 4 = $1.25. Terry spends $1.25 x 2 = $2.50 on yogurt per day. Therefore, Terry spends $2.50 x 30 = $75.00 on yogurt over 30 days.\", \"answer\": \"75\"}"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Terry eats 2 yogurts a day. The yogurts are on sale at 4 for $5.00. So, each yogurt costs $5.00 / 4 = $1.25. Terry eats 2 yogurts a day, so he spends 2 * $1.25 = $2.50 on yogurt each day. Terry eats yogurt for 30 days, so he spends 30 * $2.50 = $75.00 on yogurt over 30 days.\", \"answer\": \"75.00\"}"
+    },
+    {
+        "role": "user",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nOne agent thinks the answer is 75.00.\n\nYour group's opinions:\nTwo agents think the answer is 75.00. Below are their responses:\n{\"reasons\": \"Terry eats 2 yogurts a day. Each yogurt costs $5.00 / 4 = $1.25. Terry spends $1.25 x 2 = $2.50 on yogurt per day. Therefore, Terry spends $2.50 x 30 = $75.00 on yogurt over 30 days.\", \"answer\": \"75.00\"}\n\n{\"reasons\": \"Terry eats 2 yogurts a day. The yogurts are on sale at 4 for $5.00. So, each yogurt costs $5.00 / 4 = $1.25. Terry eats 2 yogurts a day, so he spends 2 * $1.25 = $2.50 on yogurt each day. Terry eats yogurt for 30 days, so he spends 30 * $2.50 = $75.00 on yogurt over 30 days.\", \"answer\": \"75.00\"}"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Terry eats 2 yogurts a day. The yogurts are on sale at 4 for $5.00. So, each yogurt costs $5.00 / 4 = $1.25. Terry eats 2 yogurts a day, so he spends 2 * $1.25 = $2.50 on yogurt each day. Terry eats yogurt for 30 days, so he spends 30 * $2.50 = $75.00 on yogurt over 30 days.\", \"answer\": \"75.00\"}"
+    }
+]

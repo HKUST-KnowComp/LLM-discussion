@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "There are twice as many boys as girls at Dr. Wertz's school. If there are 60 girls and 5 students to every teacher, how many teachers are there?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Let's start by finding the number of boys at Dr. Wertz's school. Since there are twice as many boys as girls, we can multiply the number of girls by 2. So, there are 60 girls * 2 = 120 boys. Next, we need to find the total number of students at the school. We know that there are 5 students for every teacher, so we can divide the total number of students by 5 to find the number of teachers. The total number of students is 120 boys + 60 girls = 180 students. Therefore, there are 180 students / 5 students per teacher = 36 teachers.\", \"answer\": \"36\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 36.\n\nYour group's opinions:\nTwo agents think the answer is 36. Below are their responses:\n{\"reasons\": \"Let's start by finding the number of boys at Dr. Wertz's school. Since there are twice as many boys as girls, we can multiply the number of girls by 2. So, there are 60 girls * 2 = 120 boys. Next, we need to find the total number of students at the school. Since there are 5 students to every teacher, we can add the number of girls and boys together and divide by 5. So, the total number of students is (60 girls + 120 boys) / 5 = 36 teachers.\", \"answer\": \"36\"}\n\n{\"reasons\": \"Let's start by finding the number of boys at Dr. Wertz's school. Since there are twice as many boys as girls, we can multiply the number of girls by 2. So, there are 60 girls * 2 = 120 boys. Next, we need to find the total number of students at the school. We know that there are 5 students for every teacher, so we can divide the total number of students by 5 to find the number of teachers. The total number of students is 120 boys + 60 girls = 180 students. Therefore, there are 180 students / 5 students per teacher = 36 teachers.\", \"answer\": \"36\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

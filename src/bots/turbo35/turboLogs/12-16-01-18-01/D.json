@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Peter plans to go to the movies this week. He always gets a ticket for $7 and popcorn for $7. If he has 42 dollars for the week, how many times can he go to the movies?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Peter needs to buy a ticket for $7 and popcorn for $7 each time he goes to the movies. He has $42 for the week. To find out how many times he can go to the movies, we need to divide the total amount of money he has by the total cost of going to the movies each time. So, the answer is 42 / (7 + 7) = 42 / 14 = 3.\", \"answer\": \"3\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 3.\n\nYour group's opinions:\nTwo agents think the answer is 3. Below are their responses:\n{\"reasons\": \"Peter needs to buy a ticket for $7 and popcorn for $7 each time he goes to the movies. He has $42 for the week. To find out how many times he can go to the movies, we need to divide the total amount of money he has by the total cost of going to the movies each time. So, the answer is 42 / (7 + 7) = 42 / 14 = 3.\", \"answer\": \"3\"}\n\n{\"reasons\": \"Peter needs to buy a ticket for $7 and popcorn for $7 each time he goes to the movies. He has $42 for the week. To find out how many times he can go to the movies, we need to divide the total amount of money he has by the total cost of going to the movies each time. So, the answer is 42 / (7 + 7) = 42 / 14 = 3.\", \"answer\": \"3\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

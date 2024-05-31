@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Shiela bought five cell phones for $150 each for a 3-month installment. A 2% interest will be charged for each unit. How much will Shiela pay each month for 3 months?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Shiela bought five cell phones for $150 each for a 3-month installment. The total cost of the cell phones is 5 * $150 = $750. A 2% interest will be charged for each unit, so the total interest is $750 * 2% = $15. The total amount Shiela needs to pay is $750 + $15 = $765. Shiela will pay this amount over 3 months, so she will pay $765 / 3 = $255 each month.\", \"answer\": \"255\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 255.\n\nYour group's opinions:\nTwo agents think the answer is 255. Below are their responses:\n{\"reasons\": \"Shiela bought five cell phones for $150 each for a 3-month installment. The total cost of the cell phones is 5 * $150 = $750. A 2% interest will be charged for each unit, so the total interest is $750 * 2% = $15. The total amount Shiela needs to pay is $750 + $15 = $765. Shiela will pay this amount over 3 months, so she will pay $765 / 3 = $255 each month.\", \"answer\": \"255\"}\n\n{\"reasons\": \"Shiela bought five cell phones for $150 each for a 3-month installment. The total cost of the cell phones is 5 * $150 = $750. A 2% interest will be charged for each unit. The interest charged for each unit is 2% of $150, which is 0.02 * $150 = $3. The total interest for all five units is $3 * 5 = $15. Therefore, Shiela will need to pay $750 + $15 = $765 in total. Since she will pay this amount over 3 months, she will pay $765 / 3 = $255 each month.\", \"answer\": \"255\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

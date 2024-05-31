@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Ted the T-Rex was planning to bring potato salad to the dinosaur picnic.  He knows that an adult dinosaur will eat 10 lbs of potato salad, and a child will eat half as much as an adult.  If there will be 20 adults and 5 children at the picnic, how many pounds of potato salad does Ted need to bring to the picnic if he hopes to have enough to feed everyone?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Ted needs to calculate the total amount of potato salad needed for adults and children separately. \n1. The amount of potato salad needed for adults is 10 lbs per adult.\n2. The amount of potato salad needed for children is half of what adults eat, which is 10/2 = 5 lbs per child.\n3. There will be 20 adults and 5 children at the picnic.\n4. Therefore, the total amount of potato salad needed for adults is 20 * 10 = 200 lbs.\n5. And the total amount of potato salad needed for children is 5 * 5 = 25 lbs.\n6. To find the total amount of potato salad needed for everyone, we add the amounts needed for adults and children: 200 + 25 = 225 lbs.\n\", \"answer\": \"225\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 225.\n\nYour group's opinions:\nOne agent thinks the answer is unknown. Below is his response:\n{\"reasons\": \"Ted needs to calculate the total amount of potato salad needed for adults and children separately. \n1. The amount of potato salad needed for adults is 10 lbs per adult.\n2. The amount of potato salad needed for children is half of what adults eat, which is 10/2 = 5 lbs per child.\n3. There will be 20 adults and 5 children at the picnic.\n4. Therefore, the total amount of potato salad needed for adults is 20 * 10 = 200 lbs.\n5. And the total amount of potato salad needed for children is 5 * 5 = 25 lbs.\n6. To find the total amount of potato salad needed for everyone, we add the amounts needed for adults and children: 200 + 25 = 225 lbs.\n\", \"answer\": \"225\"}\n\nOne agent thinks the answer is 225. Below is his response:\n{\"reasons\": \"Ted needs to calculate the total amount of potato salad needed for adults and children separately. \\n\\nPremises: \\n- An adult dinosaur eats 10 lbs of potato salad. \\n- A child eats half as much as an adult. \\n- There will be 20 adults and 5 children at the picnic. \\n\\nReasoning process: \\n1. Calculate the total amount of potato salad needed for adults: 20 adults * 10 lbs/adult = 200 lbs. \\n2. Calculate the total amount of potato salad needed for children: 5 children * (10 lbs/adult / 2) = 25 lbs. \\n3. Add the amounts of potato salad needed for adults and children: 200 lbs + 25 lbs = 225 lbs. \\n\\nTherefore, Ted needs to bring 225 pounds of potato salad to the picnic.\", \"answer\": \"225\"}\n(Hint: You must respond as required json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\")"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

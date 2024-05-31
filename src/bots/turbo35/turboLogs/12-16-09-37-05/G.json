@@ -1,0 +1,14 @@
+[
+    {
+        "role": "system",
+        "content": "6 agents are discussing the answer of a math word problem.\nThe given question is: Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary?.\n\nHowever, now there is a draw:\nThree agents think the answer is ($20 * 35 * 50) + ($30 * 15 * 50) = $35,000 + $22,500 = $57,500. Below is one of their responses:\n{\"reasons\": \"Jill's annual salary can be calculated by multiplying her hourly rate as a teacher by the number of hours she works as a teacher in a year, and adding it to the product of her hourly rate as a coach and the number of hours she works as a coach in a year. The final answer will be the sum of these two products.\", \"answer\": \"($20 * 35 * 50) + ($30 * 15 * 50) = $35,000 + $22,500 = $57,500\"}\n\nThree agents think the answer is 57500. Below is one of their responses:\n{\"reasons\": \"Jill works 50 weeks a year, so we need to calculate her total earnings for each job and then add them together. For teaching, she earns $20 per hour and works 35 hours a week, so her weekly earnings as a teacher are 20 * 35 = $700. For coaching, she earns $30 per hour and works 15 hours a week, so her weekly earnings as a coach are 30 * 15 = $450. To calculate her annual salary, we need to multiply her weekly earnings by the number of weeks she works in a year. So her annual salary as a teacher is 700 * 50 = $35,000, and her annual salary as a coach is 450 * 50 = $22,500. Finally, we add her annual salaries together to get her total annual salary, which is 35,000 + 22,500 = $57,500.\", \"answer\": \"57500\"}"
+    },
+    {
+        "role": "user",
+        "content": "Your task is to carefully determine which answer is more plausible. Each provided answer is a numeric value. You should give your response in the required json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\". You are forbidden to copy others' reasoning steps."
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"To calculate Jill's annual salary, we need to multiply her hourly rate as a teacher by the number of hours she works as a teacher in a year, and add it to the product of her hourly rate as a coach and the number of hours she works as a coach in a year. The final answer will be the sum of these two products.\", \"answer\": \"57500\"}"
+    }
+]

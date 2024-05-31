@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Gloria is shoe shopping when she comes across a pair of boots that fit her shoe budget. However, she has to choose between the boots and two pairs of high heels that together cost five dollars less than the boots. If one pair of heels costs $33 and the other costs twice as much, how many dollars are the boots?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Let's assume the cost of the boots is x dollars. The cost of one pair of heels is $33 and the cost of the other pair is twice as much, which is $33 * 2 = $66. The total cost of the two pairs of heels is $33 + $66 = $99. According to the problem, the cost of the boots is $5 more than the total cost of the two pairs of heels. So, x = $99 + $5 = $104.\", \"answer\": \"104\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nOne agent thinks the answer is 104.\nOne agent thinks the answer is 38.\n\nYour group's opinions:\nTwo agents think the answer is 104. Below are their responses:\n{\"reasons\": \"Let's assume the cost of the boots is x dollars. The cost of one pair of heels is $33 and the cost of the other pair is twice as much, which is $33 * 2 = $66. The total cost of the two pairs of heels is $33 + $66 = $99. According to the problem, the cost of the boots is $5 more than the total cost of the two pairs of heels. So, x = $99 + $5 = $104.\", \"answer\": \"104\"}\n\nLet's break down the problem and solve it step by step:\nPremises:\n- One pair of high heels costs $33.\n- The other pair of high heels costs twice as much as the first pair.\n- The total cost of the two pairs of high heels is $5 less than the cost of the boots.\nReasoning process:\nLet's assume the cost of the second pair of high heels is x dollars.\n1. The cost of the first pair of high heels is given as $33.\n2. The cost of the second pair of high heels is twice the cost of the first pair, so it is 2 * $33 = $66.\n3. The total cost of the two pairs of high heels is $33 + $66 = $99.\n4. The total cost of the boots is $5 more than the cost of the two pairs of high heels, so it is $99 + $5 = $104.\nAnswer:\n{\"reasons\": \"The cost of the boots is $104 because the total cost of the two pairs of high heels is $99 and the boots cost $5 more.\", \"answer\": \"104\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

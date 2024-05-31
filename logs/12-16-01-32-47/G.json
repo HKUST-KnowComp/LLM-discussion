@@ -1,0 +1,10 @@
+[
+    {
+        "role": "user",
+        "content": "Your task is to carefully determine which answer is more plausible. Each provided answer is a numeric value. You should give your response in the required json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\". You are forbidden to copy others' reasoning steps. "
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Sylvie's initial salary is $600. After 5 years of service, her salary increases by 10% each year. After 3 more years, her salary will increase by 10% for each of those 3 years. Therefore, her annual salary after three more years of service will be $600 + ($600 * 0.1 * 3) = $600 + $180 = $780.\", \"answer\": \"780\"}"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "role": "user",
+        "content": "Mary is an avid gardener. Yesterday, she received 18 new potted plants from her favorite plant nursery. She already has 2 potted plants on each of the 40 window ledges of her large country home. Feeling generous, she has decided that she will give 1 potted plant from each ledge to friends and family tomorrow. How many potted plants will Mary remain with?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\"\n"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Mary has 40 window ledges with 2 potted plants each, so she has a total of 40 * 2 = 80 potted plants. She received 18 new potted plants, so her total number of potted plants is now 80 + 18 = 98. She plans to give away 1 potted plant from each ledge, which means she will give away a total of 40 * 1 = 40 potted plants. Therefore, Mary will remain with 98 - 40 = 58 potted plants.\", \"answer\": \"58\"}"
+    },
+    {
+        "role": "user",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 58.\n\nYour group's opinions:\nTwo agents think the answer is 58. Below are their responses:\n{\"reasons\": \"Mary has 40 window ledges with 2 potted plants on each ledge, so she has a total of 40 * 2 = 80 potted plants. She received 18 new potted plants, so she now has a total of 80 + 18 = 98 potted plants. Mary plans to give away 1 potted plant from each ledge, so she will give away a total of 40 * 1 = 40 potted plants. Therefore, Mary will remain with 98 - 40 = 58 potted plants.\", \"answer\": \"58\"}\n\n{\"reasons\": \"Mary has 40 window ledges with 2 potted plants on each ledge, so she has a total of 40 * 2 = 80 potted plants. She received 18 new potted plants, so the total number of potted plants she has now is 80 + 18 = 98. She plans to give away 1 potted plant from each ledge, so she will give away a total of 40 * 1 = 40 potted plants. Therefore, Mary will remain with 98 - 40 = 58 potted plants.\", \"answer\": \"58\"}"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Mary has 40 window ledges with 2 potted plants on each ledge, so she has a total of 40 * 2 = 80 potted plants. She received 18 new potted plants, so she now has a total of 80 + 18 = 98 potted plants. Mary plans to give away 1 potted plant from each ledge, so she will give away a total of 40 * 1 = 40 potted plants. Therefore, Mary will remain with 98 - 40 = 58 potted plants.\", \"answer\": \"58\"}"
+    },
+    {
+        "role": "user",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 58.\n\nYour group's opinions:\nTwo agents think the answer is 58. Below are their responses:\n{\"reasons\": \"Mary has 40 window ledges with 2 potted plants on each ledge, so she has a total of 40 * 2 = 80 potted plants. She received 18 new potted plants, so her total number of potted plants is now 80 + 18 = 98. She plans to give away 1 potted plant from each ledge, which means she will give away a total of 40 * 1 = 40 potted plants. Therefore, Mary will remain with 98 - 40 = 58 potted plants.\", \"answer\": \"58\"}\n\n{\"reasons\": \"Mary has 40 window ledges with 2 potted plants on each ledge, so she has a total of 40 * 2 = 80 potted plants. She received 18 new potted plants, so she now has a total of 80 + 18 = 98 potted plants. Mary plans to give away 1 potted plant from each ledge, so she will give away a total of 40 * 1 = 40 potted plants. Therefore, Mary will remain with 98 - 40 = 58 potted plants.\", \"answer\": \"58\"}"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Mary has 40 window ledges with 2 potted plants on each ledge, so she has a total of 40 * 2 = 80 potted plants. She received 18 new potted plants, so her total number of potted plants is now 80 + 18 = 98. She plans to give away 1 potted plant from each ledge, which means she will give away a total of 40 * 1 = 40 potted plants. Therefore, Mary will remain with 98 - 40 = 58 potted plants.\", \"answer\": \"58\"}"
+    }
+]

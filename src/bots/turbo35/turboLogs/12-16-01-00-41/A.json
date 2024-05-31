@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Kyle bought last year's best-selling book for $19.50. This is with a 25% discount from the original price. What was the original price of the book?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Let x be the original price of the book.\\nGiven that Kyle bought the book with a 25% discount, he paid 75% of the original price.\\nSo, 75% of x is equal to $19.50.\\nTo find the original price, we need to solve the equation: 0.75x = 19.50.\\nDividing both sides of the equation by 0.75 gives us x = 26.\\nTherefore, the original price of the book was $26.\", \"answer\": \"26\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 26.\n\nYour group's opinions:\nTwo agents think the answer is 26. Below are their responses:\n{\"reasons\": \"Let x be the original price of the book.\\nGiven that the discounted price is $19.50, we can set up the equation: x - 0.25x = 19.50.\\nSimplifying the equation, we have 0.75x = 19.50.\\nDividing both sides by 0.75, we get x = 26.\\nTherefore, the original price of the book was $26.\", \"answer\": \"26\"}\n\n{\"reasons\": \"Let x be the original price of the book. Given that the discounted price is $19.50, we can set up the equation: x - 0.25x = 19.50. Simplifying the equation, we have 0.75x = 19.50. Dividing both sides by 0.75, we get x = 26. Therefore, the original price of the book was $26.\", \"answer\": \"26\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

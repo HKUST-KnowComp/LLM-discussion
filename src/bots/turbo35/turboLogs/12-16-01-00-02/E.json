@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Billy sells DVDs. He has 8 customers on Tuesday. His first 3 customers buy one DVD each.  His next 2 customers buy 2 DVDs each.  His last 3 customers don't buy any DVDs. How many DVDs did Billy sell on Tuesday?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Billy sold 3 DVDs to his first 3 customers. He sold 2 DVDs each to his next 2 customers. Therefore, he sold a total of 3 + (2 * 2) = 7 DVDs to his first 5 customers. His last 3 customers didn't buy any DVDs. So, the total number of DVDs Billy sold on Tuesday is 7.\", \"answer\": \"7\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nTwo agents think the answer is 7.\n\nYour group's opinions:\nTwo agents think the answer is 7. Below are their responses:\n{\"reasons\": \"Billy sold 3 DVDs to his first 3 customers. He sold 2 DVDs each to his next 2 customers. Therefore, he sold a total of 3 + 2*2 = 7 DVDs to his first 5 customers. His last 3 customers didn't buy any DVDs. So, the total number of DVDs Billy sold on Tuesday is 7.\", \"answer\": \"7\"}\n\n{\"reasons\": \"Billy sold 3 DVDs to his first 3 customers, then sold 2 DVDs each to his next 2 customers. So, he sold a total of 3 + (2 * 2) = 7 DVDs to these customers. However, his last 3 customers didn't buy any DVDs. Therefore, Billy sold a total of 7 DVDs on Tuesday.\", \"answer\": \"7\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

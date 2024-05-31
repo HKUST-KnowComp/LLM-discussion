@@ -1,0 +1,10 @@
+[
+    {
+        "role": "user",
+        "content": "Your task is to carefully determine which answer is more plausible. Each provided answer is a numeric value. You should give your response in the required json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\". You are forbidden to copy others' reasoning steps. "
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Based on the given information, Wendi gives her chickens 15 cups of feed in the morning and 25 cups of feed in the afternoon, totaling 40 cups. Since each chicken needs 3 cups of feed per day, for 20 chickens, Wendi needs to give them a total of 20 * 3 = 60 cups of feed per day. Since she has already given them 40 cups of feed, she needs to give them an additional 60 - 40 = 20 cups of feed in the final meal of the day.\", \"answer\": \"20\"}"
+    }
+]

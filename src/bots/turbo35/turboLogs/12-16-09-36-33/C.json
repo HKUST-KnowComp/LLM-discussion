@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives the chickens their feed in three separate meals. In the morning, she gives her flock of chickens 15 cups of feed.  In the afternoon, she gives her chickens another 25 cups of feed.  How many cups of feed does she need to give her chickens in the final meal of the day if the size of Wendi's flock is 20 chickens?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "After considering the opinions from other group members, I still believe that the correct answer is 120 cups of feed for the final meal of the day.\n\nReasoning process:\nWendi gives her chickens 15 cups of feed in the morning and 25 cups of feed in the afternoon, totaling 15 + 25 = 40 cups of feed. Since each chicken needs 3 cups of feed per meal, the total amount of feed needed for the first two meals for 20 chickens is 40 * 3 = 120 cups.\n\nTherefore, the updated answer is:\n{\n  \"reasons\": \"Wendi gives her chickens 15 cups of feed in the morning and 25 cups of feed in the afternoon. The total amount of feed given to the chickens in the first two meals is 15 + 25 = 40 cups. Since she gives each chicken 3 cups of feed per meal, the total amount of feed needed for the first two meals for 20 chickens is 40 * 3 = 120 cups. Therefore, Wendi needs to give her chickens 120 cups of feed in the final meal of the day.\",\n  \"answer\": \"120\"\n}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nTwo agents think the answer is 20.\n\nYour group's opinions:\nOne agent thinks the answer is unknown. Below is his response:\n{\n  \"reasons\": \"Wendi gives her chickens a total of 15 cups of feed in the morning and 25 cups of feed in the afternoon. So far, she has given her chickens a total of 15 + 25 = 40 cups of feed. Each chicken needs 3 cups of feed per day, so for 20 chickens, Wendi needs to give them a total of 20 * 3 = 60 cups of feed per day. Since she has already given them 40 cups of feed, she needs to give them an additional 60 - 40 = 20 cups of feed in the final meal of the day.\",\n  \"answer\": \"20\"\n}\n\nOne agent thinks the answer is 120. Below is his response:\n{\"reasons\": \"Wendi gives her chickens 15 cups of feed in the morning and 25 cups of feed in the afternoon. The total amount of feed given to the chickens in the first two meals is 15 + 25 = 40 cups. Since she gives each chicken 3 cups of feed per meal, the total amount of feed needed for the first two meals for 20 chickens is 40 * 3 = 120 cups. Therefore, Wendi needs to give her chickens 120 cups of feed in the final meal of the day.\", \"answer\": \"120\"}\n(Hint: You must respond as required json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\")"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

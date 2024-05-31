@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "A football team played 22 games. They won 8 more than they lost. How many did they win?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Let's assume the number of games the team lost as x. So, the number of games they won would be x + 8. The total number of games played is given as 22. So, we can set up the equation x + (x + 8) = 22 to solve for x. Simplifying the equation, we get 2x + 8 = 22. By subtracting 8 from both sides, we have 2x = 14. Dividing both sides by 2, we find x = 7. Therefore, the team lost 7 games. To find the number of games they won, we add 8 to the number of games lost, giving us 7 + 8 = 15.\", \"answer\": \"15\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 15.\n\nYour group's opinions:\nTwo agents think the answer is 15. Below are their responses:\n{\"reasons\": \"Let's assume the number of games the team lost as x. So, the number of games they won would be x + 8. The total number of games played is given as 22. So, we can set up the equation x + (x + 8) = 22 to solve for x. Simplifying the equation, we get 2x + 8 = 22. By subtracting 8 from both sides, we have 2x = 14. Dividing both sides by 2, we find x = 7. Therefore, the team lost 7 games. To find the number of games they won, we add 8 to the number of games lost, giving us 7 + 8 = 15.\", \"answer\": \"15\"}\n\n{\"reasons\": \"Let's assume the number of games the team lost as x. So, the number of games they won would be x + 8. The total number of games played is given as 22. So, we can set up the equation x + (x + 8) = 22 to solve for x. Simplifying this equation, we get 2x + 8 = 22. By subtracting 8 from both sides, we have 2x = 14. Dividing both sides by 2, we find x = 7. Therefore, the team lost 7 games. To find the number of games they won, we add 8 to the number of games lost, giving us 7 + 8 = 15.\", \"answer\": \"15\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

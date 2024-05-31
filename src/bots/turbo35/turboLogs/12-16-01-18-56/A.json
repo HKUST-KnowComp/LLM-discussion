@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Stephen placed an online order for groceries.  His final bill came to $40.00.  Because this was through a delivery vendor, they tacked on a 25% fee to his final total and charged him $3.00 in delivery fees.  Stephen also added a $4.00 tip.  After the extra fees, what was the final price of Stephen's groceries?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"The final bill for Stephen's groceries was $40.00. The delivery vendor added a 25% fee to the final total, which is $40.00 * 0.25 = $10.00. The delivery fees were $3.00 and the tip was $4.00. So, the total extra fees were $10.00 + $3.00 + $4.00 = $17.00. Therefore, the final price of Stephen's groceries after the extra fees is $40.00 + $17.00 = $57.00.\", \"answer\": \"57.00\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 57.\n\nYour group's opinions:\nOne agent thinks the answer is 57.00. Below is his response:\n{\"reasons\": \"The final bill for Stephen's groceries was $40.00. The delivery vendor added a 25% fee to the final total, which is $40.00 * 0.25 = $10.00. The delivery fees were $3.00 and the tip was $4.00. So, the total extra fees were $10.00 + $3.00 + $4.00 = $17.00. Therefore, the final price of Stephen's groceries after the extra fees is $40.00 + $17.00 = $57.00.\", \"answer\": \"57.00\"}\n\nOne agent thinks the answer is 23.00. Below is his response:\n{\"reasons\": \"The final bill for Stephen's groceries was $40.00. The delivery vendor added a 25% fee to the final total, which is $40.00 * 0.25 = $10.00. The delivery fees were $3.00 and the tip was $4.00. So, the total extra fees were $10.00 + $3.00 + $4.00 = $17.00. To find the final price of Stephen's groceries, we need to subtract the total extra fees from the final bill: $40.00 - $17.00 = $23.00.\", \"answer\": \"23.00\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

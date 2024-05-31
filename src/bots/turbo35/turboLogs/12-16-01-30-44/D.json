@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Grace weighs 125 pounds. Alex weighs 2 pounds less than 4 times what Grace weighs. What are their combined weights in pounds?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Let's solve the problem step by step:\\n\\nPremise 1: Grace weighs 125 pounds.\\nPremise 2: Alex weighs 2 pounds less than 4 times what Grace weighs.\\n\\nTo find their combined weights, we need to calculate Alex's weight first.\\n\\nStep 1: Calculate 4 times what Grace weighs: 4 * 125 = 500 pounds.\\nStep 2: Subtract 2 pounds from 500: 500 - 2 = 498 pounds.\\n\\nNow we can find their combined weights by adding Grace's weight to Alex's weight.\\n\\nStep 3: Add Grace's weight (125 pounds) to Alex's weight (498 pounds): 125 + 498 = 623 pounds.\\n\\nTherefore, their combined weights are 623 pounds.\", \"answer\": \"623\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 623.\n\nYour group's opinions:\nTwo agents think the answer is 623. Below are their responses:\n{\"reasons\": \"Let's solve the problem step by step:\\n\\nPremise 1: Grace weighs 125 pounds.\\nPremise 2: Alex weighs 2 pounds less than 4 times what Grace weighs.\\n\\nTo find their combined weights, we need to calculate Alex's weight first.\\n\\nStep 1: Calculate 4 times what Grace weighs: 4 * 125 = 500 pounds.\\nStep 2: Subtract 2 pounds from 500: 500 - 2 = 498 pounds.\\n\\nNow we can find their combined weights by adding Grace's weight to Alex's weight.\\n\\nStep 3: Add Grace's weight (125 pounds) to Alex's weight (498 pounds): 125 + 498 = 623 pounds.\\n\\nTherefore, their combined weights are 623 pounds.\", \"answer\": \"623\"}\n\n{\"reasons\": \"Let's solve the problem step by step:\\n\\nPremise 1: Grace weighs 125 pounds.\\nPremise 2: Alex weighs 2 pounds less than 4 times what Grace weighs.\\n\\nTo find their combined weights, we need to calculate Alex's weight first.\\n\\nStep 1: Calculate 4 times what Grace weighs: 4 * 125 = 500 pounds.\\nStep 2: Subtract 2 pounds from 500: 500 - 2 = 498 pounds.\\n\\nNow we can find their combined weights by adding Grace's weight to Alex's weight.\\n\\nStep 3: Add Grace's weight (125 pounds) to Alex's weight (498 pounds): 125 + 498 = 623 pounds.\\n\\nTherefore, their combined weights are 623 pounds.\", \"answer\": \"623\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "A new program had 60 downloads in the first month. The number of downloads in the second month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. How many downloads did the program have total over the three months?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"In the first month, there were 60 downloads. In the second month, the number of downloads was three times as many as the first month, which is 60 * 3 = 180. In the third month, the number of downloads reduced by 30%, which is 180 * (1 - 0.30) = 180 * 0.70 = 126. Therefore, the total number of downloads over the three months is 60 + 180 + 126 = 366.\", \"answer\": \"366\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 366.\n\nYour group's opinions:\nTwo agents think the answer is 366. Below are their responses:\n{\"reasons\": \"Let's break down the problem step by step:\\n\\n1. In the first month, the program had 60 downloads.\\n2. In the second month, the number of downloads was three times as many as the downloads in the first month. So, the number of downloads in the second month is 3 * 60 = 180.\\n3. In the third month, the number of downloads reduced by 30%. So, the number of downloads in the third month is 180 - (30% of 180) = 180 - (0.3 * 180) = 180 - 54 = 126.\\n4. To find the total number of downloads over the three months, we add the number of downloads in each month: 60 + 180 + 126 = 366.\", \"answer\": \"366\"}\n\n{\"reasons\": \"In the first month, there were 60 downloads. In the second month, the number of downloads was three times as many as the first month, which is 60 * 3 = 180. In the third month, the number of downloads reduced by 30%, which is 180 * (1 - 0.30) = 126. Therefore, the total number of downloads over the three months is 60 + 180 + 126 = 366.\", \"answer\": \"366\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

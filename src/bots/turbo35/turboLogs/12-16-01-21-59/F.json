@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Sophia is thinking of taking a road trip in her car, and would like to know how far she can drive on a single tank of gas. She has traveled 100 miles since last filling her tank, and she needed to put in 4 gallons of gas to fill it up again. The owner's manual for her car says that her tank holds 12 gallons of gas. How many miles can Sophia drive on a single tank of gas?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "After critically reviewing the opinions provided, I can confirm that the correct answer is indeed 300 miles.\n\nReasoning process:\nSophia has traveled 100 miles since last filling her tank. She needed to put in 4 gallons of gas to fill it up again. Her tank holds 12 gallons of gas. To find out how many miles she can drive on a single tank of gas, we can use the formula: miles per gallon = total miles / total gallons. Therefore, the answer is 100 miles / 4 gallons * 12 gallons = 300 miles.\n\nUpdated answer:\n{\n  \"reasons\": \"Sophia has traveled 100 miles since last filling her tank. She needed to put in 4 gallons of gas to fill it up again. Her tank holds 12 gallons of gas. To find out how many miles she can drive on a single tank of gas, we can use the formula: miles per gallon = total miles / total gallons. Therefore, the answer is 100 miles / 4 gallons * 12 gallons = 300 miles.\",\n  \"answer\": \"300\"\n}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\n\nYour group's opinions:\nOne agent thinks the answer is unknown. Below is his response:\n{\n  \"reasons\": \"Sophia traveled 100 miles and needed to put in 4 gallons of gas to fill up her tank. Her tank holds 12 gallons of gas. To find out how many miles she can drive on a single tank of gas, we can use the formula: miles per gallon = total miles / total gallons. Therefore, the answer is: 100 miles / 4 gallons * 12 gallons = 300 miles.\",\n  \"answer\": \"300\"\n}\n\nOne agent thinks the answer is 300. Below is his response:\n{\"reasons\": \"Sophia has traveled 100 miles since last filling her tank. Sophia needed to put in 4 gallons of gas to fill her tank. Sophia's tank holds 12 gallons of gas. To find out how many miles Sophia can drive on a single tank of gas, we can use the formula: miles per gallon = total miles / total gallons. Therefore, the answer is 100 miles / 4 gallons * 12 gallons = 300 miles.\", \"answer\": \"300\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

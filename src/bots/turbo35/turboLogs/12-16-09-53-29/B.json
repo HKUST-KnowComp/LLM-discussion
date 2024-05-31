@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Judy teaches 5 dance classes, every day, on the weekdays and 8 classes on Saturday.  If each class has 15 students and she charges $15.00 per student, how much money does she make in 1 week?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Judy teaches 5 dance classes on weekdays, so she teaches a total of 5 * 5 = 25 classes on weekdays. She teaches 8 classes on Saturday. In total, she teaches 25 + 8 = 33 classes in a week. Each class has 15 students, so she teaches a total of 33 * 15 = 495 students in a week. She charges $15.00 per student, so she makes a total of 495 * 15 = $7425.00 in 1 week.\", \"answer\": \"7425\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 2925.\n\nYour group's opinions:\nTwo agents think the answer is 7425. Below are their responses:\n{\"reasons\": \"Judy teaches 5 dance classes on weekdays, so she teaches a total of 5 * 5 = 25 classes on weekdays. She teaches 8 classes on Saturday. In total, she teaches 25 + 8 = 33 classes in a week. Each class has 15 students, so she teaches a total of 33 * 15 = 495 students in a week. She charges $15.00 per student, so she makes a total of 495 * 15 = $7425.00 in 1 week.\", \"answer\": \"7425\"}\n\n{\"reasons\": \"Judy teaches 5 dance classes on weekdays, so she teaches 5 * 5 = 25 classes in total on weekdays. She teaches 8 classes on Saturday. So, she teaches 25 + 8 = 33 classes in total in a week. Each class has 15 students, so she teaches 33 * 15 = 495 students in a week. She charges $15.00 per student, so she makes 495 * 15 = $7425.00 in 1 week.\", \"answer\": \"7425\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

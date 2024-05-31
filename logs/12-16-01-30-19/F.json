@@ -1,0 +1,26 @@
+[
+    {
+        "role": "user",
+        "content": "Charlie had 10 stickers. He bought 21 stickers from a store in the mall and got 23 stickers for his birthday. Then Charlie gave 9 of the stickers to his sister and used 28 to decorate a greeting card. How many stickers does Charlie have left?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\"\n"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Charlie had 10 stickers. He bought 21 stickers from a store in the mall and got 23 stickers for his birthday. Then Charlie gave 9 of the stickers to his sister and used 28 to decorate a greeting card. To find out how many stickers Charlie has left, we need to subtract the number of stickers he gave to his sister and used for the greeting card from the total number of stickers he had. So, the calculation is: 10 + 21 + 23 - 9 - 28 = 17. Therefore, Charlie has 17 stickers left.\", \"answer\": \"17\"}"
+    },
+    {
+        "role": "user",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nOne agent thinks the answer is 20.\nTwo agents think the answer is 17.\n\nYour group's opinions:\nTwo agents think the answer is 17. Below are their responses:\n{\"reasons\": \"Charlie started with 10 stickers. He bought 21 more stickers, so he had 10 + 21 = 31 stickers. He received 23 stickers for his birthday, so he had 31 + 23 = 54 stickers. He gave 9 stickers to his sister, so he had 54 - 9 = 45 stickers. He used 28 stickers to decorate a greeting card, so he had 45 - 28 = 17 stickers left.\", \"answer\": \"17\"}\n\n{\"reasons\": \"Charlie had 10 stickers. He bought 21 stickers from a store in the mall and got 23 stickers for his birthday. Then Charlie gave 9 of the stickers to his sister and used 28 to decorate a greeting card. To find out how many stickers Charlie has left, we need to subtract the number of stickers he gave to his sister and used for the greeting card from the total number of stickers he had. So, the calculation is: 10 + 21 + 23 - 9 - 28 = 17.\", \"answer\": \"17\"}"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Charlie started with 10 stickers. He bought 21 more stickers, so he had 10 + 21 = 31 stickers. He received 23 stickers for his birthday, so he had 31 + 23 = 54 stickers. He gave 9 stickers to his sister, so he had 54 - 9 = 45 stickers. He used 28 stickers to decorate a greeting card, so he had 45 - 28 = 17 stickers left. Therefore, Charlie has 17 stickers left.\", \"answer\": \"17\"}"
+    },
+    {
+        "role": "user",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 17.\n\nYour group's opinions:\nTwo agents think the answer is 17. Below are their responses:\n{\"reasons\": \"Charlie had 10 stickers. He bought 21 stickers from a store in the mall and got 23 stickers for his birthday. Then Charlie gave 9 of the stickers to his sister and used 28 to decorate a greeting card. To find out how many stickers Charlie has left, we need to subtract the number of stickers he gave to his sister and used for the greeting card from the total number of stickers he had. So, the calculation is: 10 + 21 + 23 - 9 - 28 = 17.\", \"answer\": \"17\"}\n\n{\"reasons\": \"Based on the given information, Charlie started with 10 stickers. He bought 21 stickers, received 23 stickers for his birthday, gave 9 stickers to his sister, and used 28 stickers to decorate a greeting card. To find out how many stickers Charlie has left, we need to subtract the number of stickers he gave to his sister and used for the greeting card from the total number of stickers he had. So, the calculation is: 10 + 21 + 23 - 9 - 28 = 17. Therefore, Charlie has 17 stickers left.\", \"answer\": \"17\"}"
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Charlie started with 10 stickers. He bought 21 more stickers, so he had 10 + 21 = 31 stickers. He received 23 stickers for his birthday, so he had 31 + 23 = 54 stickers. He gave 9 stickers to his sister, so he had 54 - 9 = 45 stickers. He used 28 stickers to decorate a greeting card, so he had 45 - 28 = 17 stickers left. Therefore, Charlie has 17 stickers left.\", \"answer\": \"17\"}"
+    }
+]

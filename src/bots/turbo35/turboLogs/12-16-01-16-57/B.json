@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "A mechanic charges different rates to repair the tires of trucks and cars.  For each truck tire that is repaired, the mechanic will charge $60 and for each car tire that is repaired, the mechanic will charge $40.  On Thursday, the mechanic repairs 6 truck tires and 4 car tires.  On Friday, the mechanic repairs 12 car tries and doesn't repair any truck tires.  How much more revenue did the mechanic earn on the day with higher revenue?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"On Thursday, the mechanic repaired 6 truck tires at $60 each, so the revenue from truck tires is 6 * 60 = $360. The mechanic also repaired 4 car tires at $40 each, so the revenue from car tires is 4 * 40 = $160. Therefore, the total revenue on Thursday is 360 + 160 = $520. On Friday, the mechanic repaired 12 car tires at $40 each, so the revenue from car tires is 12 * 40 = $480. The total revenue on Friday is $480. The mechanic earned $520 - $480 = $40 more revenue on Thursday.\", \"answer\": \"40\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nOne agent thinks the answer is 40.\n\nYour group's opinions:\nTwo agents think the answer is unknown. Below are their responses:\n{\n  \"reasons\": \"On Thursday, the mechanic repaired 6 truck tires and 4 car tires, so the revenue from truck tires is 6 * $60 = $360, and the revenue from car tires is 4 * $40 = $160. Therefore, the total revenue on Thursday is $360 + $160 = $520. On Friday, the mechanic repaired 12 car tires, so the revenue from car tires is 12 * $40 = $480. The revenue on Friday is higher than on Thursday by $480 - $520 = -$40. Therefore, the mechanic earned $40 less on the day with higher revenue.\",\n  \"answer\": \"-40\"\n}\n\n{\n  \"reasons\": \"On Thursday, the mechanic repairs 6 truck tires, which will cost 6 * $60 = $360. The mechanic also repairs 4 car tires, which will cost 4 * $40 = $160. So, the total revenue on Thursday is $360 + $160 = $520. On Friday, the mechanic repairs 12 car tires, which will cost 12 * $40 = $480. Therefore, the mechanic earned $480 - $520 = -$40 less on Friday compared to Thursday.\",\n  \"answer\": \"-40\"\n}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

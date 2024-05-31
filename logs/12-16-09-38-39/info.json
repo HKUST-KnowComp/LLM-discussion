@@ -1,0 +1,8 @@
+{
+    "turbo-4k": {
+        "input_tokens": 9972,
+        "output_tokens": 1994,
+        "total_tokens": 11966,
+        "temperature": 0.25
+    }
+}

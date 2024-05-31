@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Terry eats 2 yogurts a day.  They are currently on sale at 4 yogurts for $5.00.  How much does he spend on yogurt over 30 days?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Terry eats 2 yogurts a day. The yogurts are on sale at 4 for $5.00. So, each yogurt costs $5.00 / 4 = $1.25. Terry eats 2 yogurts a day, so he spends 2 * $1.25 = $2.50 on yogurt each day. Terry eats yogurt for 30 days, so he spends 30 * $2.50 = $75.00 on yogurt over 30 days.\", \"answer\": \"75.00\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nOne agent thinks the answer is 75.00.\n\nYour group's opinions:\nTwo agents think the answer is 75.00. Below are their responses:\n{\"reasons\": \"Terry eats 2 yogurts a day. Each yogurt costs $5.00 / 4 = $1.25. Terry spends $1.25 x 2 = $2.50 on yogurt per day. Therefore, Terry spends $2.50 x 30 = $75.00 on yogurt over 30 days.\", \"answer\": \"75.00\"}\n\n{\"reasons\": \"Terry eats 2 yogurts a day. The yogurts are on sale at 4 for $5.00. So, each yogurt costs $5.00 / 4 = $1.25. Terry eats 2 yogurts a day, so he spends 2 * $1.25 = $2.50 on yogurt each day. Terry eats yogurt for 30 days, so he spends 30 * $2.50 = $75.00 on yogurt over 30 days.\", \"answer\": \"75.00\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

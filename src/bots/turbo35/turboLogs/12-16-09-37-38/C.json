@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "I have 10 liters of orange drink that are two-thirds water and I wish to add it to 15 liters of pineapple drink that is three-fifths water. But as I pour it, I spill one liter of the orange drink. How much water is in the remaining 24 liters?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Let's calculate the amount of water in the remaining 10 liters of orange drink and the 15 liters of pineapple drink. Then we'll subtract the spilled orange drink from the total amount of water. Finally, we'll add the remaining water from the orange drink and the water from the pineapple drink to find the total amount of water in the remaining 24 liters.\\n\\nOrange drink: 10 liters * (2/3) = 6.67 liters of water\\n\\nPineapple drink: 15 liters * (3/5) = 9 liters of water\\n\\nRemaining water from the orange drink: 6.67 liters - 1 liter (spilled) = 5.67 liters\\n\\nTotal water in the remaining 24 liters = 5.67 liters + 9 liters = 14.67 liters\", \"answer\": \"14.67\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nOne agent thinks the answer is 12.8.\nOne agent thinks the answer is 14.67.\nOne agent thinks the answer is 16.8.\n\nYour group's opinions:\nOne agent thinks the answer is 14.67. Below is his response:\n{\"reasons\": \"Let's calculate the amount of water in the remaining 10 liters of orange drink and the 15 liters of pineapple drink. Then we'll subtract the spilled orange drink from the total amount of water. Finally, we'll add the remaining water from the orange drink and the water from the pineapple drink to find the total amount of water in the remaining 24 liters.\\n\\nOrange drink: 10 liters * (2/3) = 6.67 liters of water\\n\\nPineapple drink: 15 liters * (3/5) = 9 liters of water\\n\\nRemaining water from the orange drink: 6.67 liters - 1 liter (spilled) = 5.67 liters\\n\\nTotal water in the remaining 24 liters = 5.67 liters + 9 liters = 14.67 liters\", \"answer\": \"14.67\"}\n\nOne agent thinks the answer is 13.6. Below is his response:\n{\"reasons\": \"Let's calculate the amount of water in the remaining 10 liters of orange drink and the 15 liters of pineapple drink. Then we'll subtract the spilled orange drink from the total amount of water. Finally, we'll add the remaining water from the orange drink and the water from the pineapple drink to find the total amount of water in the remaining 24 liters.\", \"answer\": \"13.6\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are asked to solve a linguistically diverse grade school math word problem. Use basic arithmetic operations (+ - * /) to reach the final answer. It is guaranteed to have an answer.\nYour response format should be first write down all the premises with labels, then answer the problem step by step with reference to the problem and reasoing process. Please strictly output your answer in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "user",
+        "content": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have together if Seattle has 20 sheep?\nNow please strictly answer this question in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    },
+    {
+        "role": "assistant",
+        "content": "{\"reasons\": \"Let's evaluate the given information step by step. We know that Seattle has 20 sheep. According to the problem, Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. And Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. Therefore, the total number of sheep in Toulouse, Charleston, and Seattle is 20 + 80 + 160 = 260.\", \"answer\": \"260\"}"
+    },
+    {
+        "role": "system",
+        "content": "There are 2 groups of people discussing on the same math word question. I will provide you the detailed reasons and answers from your group member and answers from other group members. Use these opinions and your previous answer as additional advice, note that they maybe wrong. Do not copy other's entire answer, modify the part you believe is wrong.\n\nOther group members' opinions:\nThree agents think the answer is 260.\n\nYour group's opinions:\nTwo agents think the answer is unknown. Below are their responses:\n{\"reasons\": \"Let's solve this problem step by step. \nAccording to the given information, Seattle has 20 sheep. \nCharleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. \nToulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. \nTherefore, the total number of sheep in Toulouse, Charleston, and Seattle is 20 + 80 + 160 = 260.\", \"answer\": \"260\"}\n\n{\"reasons\": \"Let's solve this problem step by step. \nLet's assume the number of sheep in Seattle is x. \nAccording to the problem, Charleston has 4 times as many sheep as Seattle, so Charleston has 4x sheep. \nAnd Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * (4x) = 8x sheep. \nTherefore, the total number of sheep in Toulouse, Charleston, and Seattle is x + 4x + 8x = 13x. \nGiven that Seattle has 20 sheep, we can substitute x with 20 in the equation. \nSo, the total number of sheep is 13 * 20 = 260.\", \"answer\": \"260\"}"
+    },
+    {
+        "role": "user",
+        "content": "Use the provided answers as additional advice critically, please provide an updated answer. Make sure to strictly state your response over proposition at the end of the response in the json format: \"{\"reasons\": \"(a string of your reasoning process)\", \"answer\": \"(a pure numeric value without unit)\"}\""
+    }
+]
